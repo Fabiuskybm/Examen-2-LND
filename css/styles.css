@@ -1,0 +1,203 @@
+:root {
+
+    /* Primary */
+
+    --Red: #ea5353;
+    --Cyan: #45d3d3;
+    --Orange: #fcaf4a;
+    --Blue: #549ef2;
+
+
+    /* Neutral */
+
+    --Very-Dark-Blue:#4c4e61;
+    --Grayish-Blue: #a3a5ae;
+    --Very-Light-Gray: #fafafa;
+
+}
+
+/* font-family: 'Poppins', sans-serif; */
+
+/* -11px 7px 32px -10px rgba(0,0,0,0.75)  */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* Header configutarion */
+
+header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--Very-Dark-Blue);
+    margin-top: 4rem;
+}
+
+header h3 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+header p span {
+    font-size: 2rem;
+    color: var(--Grayish-Blue);
+}
+
+header p {
+    font-size: 1.3rem;
+    color: var(--Grayish-Blue);
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0 7rem 0 7rem;
+    line-height: 2rem;
+}
+
+
+/* Cards configuration */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.supervisor {
+    margin-top: 4rem;
+    border-top: 2px solid var(--Cyan);
+}
+
+.team {
+    border-top: 2px solid var(--Red);
+}
+
+.karma {
+    border-top: 2px solid var(--Orange);
+}
+
+.calculator {
+    border-top: 2px solid var(--Blue);
+    margin-bottom: 5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    height: auto;
+    margin-top: 2rem;
+    box-shadow: -11px 7px 32px -10px rgba(0,0,0,0.75);
+    
+}
+
+.text {
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+}
+
+.text h3 {
+    font-size: 1.5rem;
+    color: var(--Very-Dark-Blue);
+}
+
+.text p {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: var(--Grayish-Blue);
+}
+
+.container img {
+    width: 4rem;
+    height: 4rem;
+    margin-left: 19rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+/* DESKTOP DESIGN */
+
+@media (min-width: 1440px) {
+
+    header {
+        margin-top: 5rem;
+    }
+
+    header h3, header p span {
+        font-size: 5rem;
+        line-height: 6rem;
+    }
+
+    .ia {
+        font-size: 1.8rem;
+        margin-top: 2rem;
+        text-align: center;
+        padding-left: 45rem;
+        padding-right: 45rem;
+        line-height: 2.5rem;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .container {
+        width: 35rem;
+        height: 20rem;
+        margin: 0;
+    }
+
+    .text h3 {
+        font-size: 2rem;
+    }
+
+    .text p {
+        font-size: 1.5rem;
+    }
+
+    .container img {
+        margin-left: 27rem;
+        margin-top: 5rem;
+    }
+
+    .supervisor {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .team {
+        margin-top: 4rem;
+        grid-column: 3/4;
+    }
+
+    .karma {
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+
+    .calculator {
+        grid-column: 4/5;
+        grid-row: 2/3;
+    }
+
+
+}
+
